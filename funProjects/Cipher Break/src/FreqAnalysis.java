@@ -30,7 +30,7 @@ public class FreqAnalysis {
                 default -> throw new IllegalStateException("Unexpected value: " + j);
             };
             fileGetter = new BufferedReader(new FileReader(fileName));
-            String currLine = "";
+            String currLine;
             do {
                 currLine = fileGetter.readLine();
                 if (currLine == null) break;
